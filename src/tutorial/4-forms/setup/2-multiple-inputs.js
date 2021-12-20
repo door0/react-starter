@@ -38,7 +38,9 @@ const ControlledInputs = () => {
     if(person.firstName && person.email && person.age) {
       const newPerson = {...person, id: new Date().getTime().toString()}
       setPeople([...people, newPerson])
+      console.log(person)
       setPerson({firstName: '', email: '', age: ''})
+      console.log(people)
     }
   }
 
